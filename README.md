@@ -49,7 +49,7 @@ Please replace with  your own **Username**,**Password** and **Mongodb Connection
 
 ## Command to run the code
 
-cmd --> streamlt run main.py
+cmd --> streamlit run main.py
 
 
 ## Reference docs
