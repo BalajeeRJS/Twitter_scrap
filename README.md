@@ -22,6 +22,15 @@ Tweets that are retrieved using the Snscrape library is inserted into the MongoD
 
  Streamlit framework is used for creating the GUI for Twitter Scraping.It is used to create search textbox,submit button and dispalying the tweets.
 
+## Database Configuration
+Please replace with  your own **Username**,**Password** and **Mongodb Connection** string in **twitterscrap.py** file while running the code.
+![image](https://user-images.githubusercontent.com/116367662/224507490-f7762817-aaeb-450c-8df9-d11eefb8f84a.png)
+
+
+## Command to run the code
+
+cmd --> streamlit run main.py
+
 ## How app works ?
 
 **Step-1**  
@@ -41,16 +50,6 @@ If the retrieved data needs to be uploaded to database, click 'UPLOAD TO DATABAS
 
 **Step-6** <br>
 Retrieved data can be downloaded in CSV/JSON format using 'DOWNLOAD' button.
-
-## Database Configuration
-Please replace with  your own **Username**,**Password** and **Mongodb Connection** string in **twitterscrap.py** file while running the code.
-![image](https://user-images.githubusercontent.com/116367662/224507490-f7762817-aaeb-450c-8df9-d11eefb8f84a.png)
-
-
-## Command to run the code
-
-cmd --> streamlit run main.py
-
 
 ## Reference docs
  - [Streamlit docs](https://docs.streamlit.io/)
