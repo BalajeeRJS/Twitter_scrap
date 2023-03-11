@@ -44,14 +44,13 @@ def convert_to_json(df):
     return df.to_json( orient = 'records').encode('utf-8')
 
 #Comfiguring Streamlit GUI
-st.set_page_config(page_title='Twitter Scrapper',
-                   page_icon=':hash:',
-                   layout='wide')
+st.set_page_config(page_title='Twitter Scrapping',
+                   page_icon=':hash:',layout='wide')
 
 
 with st.container():
     
-    st.markdown("<h1 style='text-align: center;'>Welcome to Twitter Scrap</h1>",
+    st.markdown("<h1 style='text-align: center;'>Welcome to Twitter Scrapping</h1>",
                  unsafe_allow_html=True)
     buff, col, buff2 = st.columns([1,1,1])
     with buff:
@@ -84,15 +83,15 @@ with st.container():
           info_display=True
       with st.container():
        if len(st.session_state['tweets_list2'])!=0 and diplay_error!=True:
-         file_type = st.radio("Choose File type for download",
+          file_type = st.radio("Choose File type for download",
                                ('CSV', 'JSON'))
-         df = twitterscrap.convert_to_df(st.session_state['tweets_list2'])
-         if file_type=='CSV':
+          df = twitterscrap.convert_to_df(st.session_state['tweets_list2'])
+          if file_type=='CSV':
             data=convert_to_csv(df)
             st.download_button( label="Download data as CSV",
                                data=data,file_name='Twitter_scrap.csv',
                                mime='text/csv')
-         else:
+          else:
             data=convert_to_json(df)
             st.download_button( label="Download data as JSON",
                                data=data,file_name='Twitter_scrap.json',
