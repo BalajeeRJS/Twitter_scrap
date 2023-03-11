@@ -18,9 +18,9 @@ def connect_db(username,password):
                       tlsCAFile=certifi.where())
       return con
     except ConnectionFailure:
-        return 'Fail'
+      return 'Fail'
     except:
-        return 'Fail'
+      return 'Fail'
     
 @st.cache_data
 def convert_to_df(input_data):
