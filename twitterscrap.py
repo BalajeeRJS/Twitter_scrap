@@ -37,7 +37,7 @@ def scrap(final_query,limit):
    
 #Using TwitterSearchScraper to scrape data and append tweets to list
     for i,tweet in enumerate(sntwitter.TwitterSearchScraper(final_query).get_items()):
-        if i>limit:
+        if i==limit:
             break
         tweets_list2.append([ tweet.date, tweet.id,tweet.url,tweet.user.username,
                               tweet.content,tweet.replyCount,tweet.retweetCount,

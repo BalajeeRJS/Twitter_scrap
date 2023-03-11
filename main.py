@@ -74,13 +74,13 @@ with st.container():
              diplay_error=True
       
       with col2:   
-       if len(st.session_state['tweets_list2'])!=0:
+       if len(st.session_state['tweets_list2'])!=0 and diplay_error!=True:
          if st.button('UPLOAD TO DATABASE'):
           
           message=upload(st.session_state['tweets_list2'])
           info_display=True
       with st.container():
-       if len(st.session_state['tweets_list2'])!=0:
+       if len(st.session_state['tweets_list2'])!=0 and diplay_error!=True:
          file_type = st.radio("Choose File type for download",
                                ('CSV', 'JSON'))
          df = twitterscrap.convert_to_df(st.session_state['tweets_list2'])
@@ -115,7 +115,7 @@ with st.container():
                                   
 with st.container():
     st.subheader("Displaying the results")
-    if len(st.session_state['tweets_list2'])!=0:
+    if len(st.session_state['tweets_list2'])!=0 and diplay_error!=True:
         tweets_df2=twitterscrap.convert_to_df(st.session_state['tweets_list2'])
         st.dataframe(tweets_df2)
     else:
