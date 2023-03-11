@@ -59,7 +59,9 @@ def insert_data(query_text,tweets_list2):
             parsed = json.loads(result)
             pprint.pprint(parsed)
             currentdate=str(date.today())
-            mystore= {'Scraped Word': query_text, 'Scraped Date':currentdate ,'Scraped Data' :parsed}
+            mystore= {'Scraped Word': query_text,
+                      'Scraped Date':currentdate,
+                      'Scraped Data' :parsed}
             x = document.insert_one(mystore)
             print(x.inserted_id)
             return 'Successfully uploaded'

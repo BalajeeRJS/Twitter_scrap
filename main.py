@@ -44,12 +44,15 @@ def convert_to_json(df):
     return df.to_json( orient = 'records').encode('utf-8')
 
 #Comfiguring Streamlit GUI
-st.set_page_config(page_title='Twitter Scrapper',page_icon=':hash:',layout='wide')
+st.set_page_config(page_title='Twitter Scrapper',
+                   page_icon=':hash:',
+                   layout='wide')
 
 
 with st.container():
     
-    st.markdown("<h1 style='text-align: center;'>Welcome to Twitter Scrap</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'>Welcome to Twitter Scrap</h1>",
+                 unsafe_allow_html=True)
     buff, col, buff2 = st.columns([1,1,1])
     with buff:
       st.image('Title.jpg',output_format="JPEG")
