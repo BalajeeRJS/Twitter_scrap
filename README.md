@@ -28,10 +28,10 @@ Tweets that are retrieved using the Snscrape library is inserted into the MongoD
 Enter hashtag/keyword to be searched in search textbox.
 
 **Step-2**  
-Specify the date range between which tweets needs to retrieved from twitter.
+Specify the date range between which tweets need to retrieved from Twitter.
 
 **Step-3**  
-Enter the number of tweets to be retrieved from twitter and click 'SUBMIT' button.
+Enter the number of tweets to be retrieved from Twitter and click 'SUBMIT' button.
 
 **Step-4**  
 The retrieved data are displayed in results section.
@@ -41,6 +41,20 @@ If the retrieved data needs to be uploaded to database, click 'UPLOAD TO DATABAS
 
 **Step-6** 
 Retrieved data can be downloaded in CSV/JSON format using 'DOWNLOAD' button.
+
+## Database Configuration
+Please replace with  your own **Username**,**Password** and **Mongodb Connection** string in **twitterscrap.py** file while running the code.
+
+![image](https://user-images.githubusercontent.com/116367662/224507110-fb12c2a5-cd5a-4b49-b975-fb0ee5297f23.png)
+
+## Running the code
+
+cmd --> streamlt run main.py
+
+
+
+
+
 
 ## Reference docs
  - [Streamlit docs](https://docs.streamlit.io/)
