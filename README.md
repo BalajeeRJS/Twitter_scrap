@@ -36,24 +36,20 @@ Enter the number of tweets to be retrieved from Twitter and click 'SUBMIT' butto
 **Step-4**  
 The retrieved data are displayed in results section.
 
-**Step-5** 
+**Step-5** <br>
 If the retrieved data needs to be uploaded to database, click 'UPLOAD TO DATABASE'.
 
-**Step-6** 
+**Step-6** <br>
 Retrieved data can be downloaded in CSV/JSON format using 'DOWNLOAD' button.
 
 ## Database Configuration
 Please replace with  your own **Username**,**Password** and **Mongodb Connection** string in **twitterscrap.py** file while running the code.
+![image](https://user-images.githubusercontent.com/116367662/224507490-f7762817-aaeb-450c-8df9-d11eefb8f84a.png)
 
-![image](https://user-images.githubusercontent.com/116367662/224507110-fb12c2a5-cd5a-4b49-b975-fb0ee5297f23.png)
 
-## Running the code
+## Command to run the code
 
 cmd --> streamlt run main.py
-
-
-
-
 
 
 ## Reference docs
