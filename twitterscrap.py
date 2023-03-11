@@ -13,7 +13,6 @@ username=st.secrets['Mongo_username']
 password=st.secrets['Mongo_pwd']
 @st.cache_resource
 def connect_db(username,password):
-    print("I am running")
     try:
       con=MongoClient("mongodb+srv://"+username+":"+password+"@cluster0.2lvjncx.mongodb.net/?retryWrites=true&w=majority",
                       tlsCAFile=certifi.where())

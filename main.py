@@ -48,7 +48,8 @@ st.set_page_config(page_title='Twitter Scrapper',page_icon=':hash:',layout='wide
 
 
 with st.container():
-    st.title("Welcome to Twitter Scrap")
+    
+    st.markdown("<h1 style='text-align: center;'>Welcome to Twitter Scrap</h1>", unsafe_allow_html=True)
     buff, col, buff2 = st.columns([1,1,1])
     with buff:
       st.image('Title.jpg',output_format="JPEG")
