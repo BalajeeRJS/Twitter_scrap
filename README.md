@@ -53,3 +53,6 @@ Retrieved data can be downloaded in CSV/JSON format using 'DOWNLOAD' button.
 
 ## Reference docs
  - [Streamlit docs](https://docs.streamlit.io/)
+ 
+## Linkedin Post
+-[LinkedIn Post] (https://www.linkedin.com/posts/rjs-balajee-389a8215a_python-dataengineering-streamlit-activity-7040479205385527296-kAX6?utm_source=share&utm_medium=member_desktop)
