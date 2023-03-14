@@ -1,7 +1,7 @@
 
 # Twitter Scraping 
 
-This is Streamlit web app for Scraping Twitter.It scrapes the twitter data for the given hashtag/keyword in a specific date range using snscrape library.The retrieved tweets are uploaded in MongoDB and can be dowloaded as CSV or JSON file.
+This is Streamlit web app for Scraping Twitter.It scrapes the twitter data for the given hashtag/keyword in a specific date range using snscrape library.The retrieved tweets are uploaded in MongoDB and can be downloaded as CSV or JSON file.
 
 ## Tech Stack
 
